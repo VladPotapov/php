@@ -13,6 +13,13 @@
     //уничтожение объекта
     unset($obj);
 
-    echo $num;
-    echo $copy;
+    function fool() {
+        //удаляет глобальную переменную
+        unset($GLOBALS['copy']);
+        $text = "my text";
+        echo "<p>$text</p>";
+    }
+
+    fool();
+
 ?>
