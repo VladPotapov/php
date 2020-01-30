@@ -1,14 +1,14 @@
 <?php
 
 class Employee {
-    public $Foto;
+    public $Photo;
     public $Surname;
     public $Name;
     public $Patronymic;
-    public function __construct($foto = "", $surname = "", $name = "", $patronymic = "") {
+    public function __construct($photo = "", $surname = "", $name = "", $patronymic = "") {
         //фото
         //не делать отступ от this->
-        $this->Foto = $foto;
+        $this->Photo = $photo;
 
         //Фамилию
         $this->Surname = $surname;
@@ -39,6 +39,13 @@ class Employee {
      * стаж и репутация
      * характеристика
      */
+
+     public function __destruct() {
+         unset($Photo);
+         unset($Surname);
+         unset($Name);
+         unset($Patronymic);
+     }
 }
 
 ?>
