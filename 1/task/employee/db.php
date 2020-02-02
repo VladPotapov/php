@@ -1,15 +1,15 @@
 <?php
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'php');
+$host = "localhost";
+$db_user = "root";
+$db_pass = "";
+$db_name = "php";
+$link = mysqli_connect($host, $db_user, $db_pass, $db_name);
 
-$mysql = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-
-if($mysql->connect_errno) exit('Ошибка подключения к БД');
-
-$mysql->set_charset('utf8');
-$mysql->close();
+if (mysqli_connect_errno())
+{
+    printf("Соединение не удалось: %s\n", mysqli_connect_errno());
+    exit();
+}
 
 ?>
