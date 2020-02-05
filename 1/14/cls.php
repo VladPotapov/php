@@ -3,6 +3,7 @@
 class  Cls
 {
     public $num;
+    public $num2;
 
     public function __isset($index)
     {

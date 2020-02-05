@@ -5,19 +5,30 @@ class Employee {
     public $Surname;
     public $Name;
     public $Patronymic;
-    public function __construct($photo = "", $surname = "", $name = "", $patronymic = "") {
-        //фото
+    public function __construct($photo, $surname, $name, $patronymic, $age) {
         //не делать отступ от this->
-        $this->Photo = $photo;
+        $this->Photo = $photo;  //фото
+        $this->Surname = $surname;  //Фамилию
+        $this->Name = $name;    //Имя
+        $this->Patronymic = $patronymic;    //Отчество
+        $this->age = $age;  //возраст
+    }
 
-        //Фамилию
-        $this->Surname = $surname;
+    public function age_get()
+    {
+        return $this->age;
+    }
 
-        //Имя
-        $this->Name = $name;
+    public function age_set($val)
+    {
+        $val = intval($val);
 
-        //Отчество
-        $this->Patronymic = $patronymic;
+        if($val >= 18 && $val <= 65)
+        {
+            $this->age = $val;
+            return true;
+        }
+        else return false;
     }
 
     /**
@@ -48,4 +59,5 @@ class Employee {
      }
 }
 
+private $age;
 ?>

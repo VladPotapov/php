@@ -3,18 +3,29 @@
 require_once("cls.php");
 
 $obj = new Cls();
-//$obj->num = 10;
+$obj->num = 10;
 
 //ничего не покажет
-echo $obj->__isset($obj->num);
+//$bool = $obj->__isset($obj->num);
 
+var_dump($obj->num);
+echo "<br>";
 
-if($obj->__isset($obj->num) == True)
+if(isset($obj->num))
 {
-    echo "true";
+    echo "yes";
 }
 else {
-    echo "false";
+    echo "none";
 }
+
+echo "<br>";
+if($obj->__isset($obj->num)) {
+    echo "__isset yes";
+}
+else {
+    echo "__isset none";
+}
+
 
 ?>
