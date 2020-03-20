@@ -20,12 +20,17 @@ else {
 }
 
 echo "<br>";
+
+/*Fatal error: Uncaught Error: Call to undefined method Cls::__isset()
 if($obj->__isset($obj->num)) {
     echo "__isset yes";
 }
 else {
     echo "__isset none";
 }
+*/
+
+public SolrDocument::__isset(string $obj->num) : bool
 
 
 ?>
