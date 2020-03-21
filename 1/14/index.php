@@ -1,36 +1,42 @@
 <?php
 
-require_once("cls.php");
+require_once('cls.php');
 
-$obj = new Cls();
-$obj->num = 10;
-
-//ничего не покажет
-//$bool = $obj->__isset($obj->num);
-
-var_dump($obj->num);
-echo "<br>";
-
-if(isset($obj->num))
-{
-    echo "yes";
+if (isset($obj)) {
+    echo "yes obj = 3";
 }
 else {
-    echo "none";
+    echo "none obj = 3";
 }
 
 echo "<br>";
 
-/*Fatal error: Uncaught Error: Call to undefined method Cls::__isset()
-if($obj->__isset($obj->num)) {
-    echo "__isset yes";
+if(isset($obj_now)) {
+    echo "yes obj_now;";
 }
 else {
-    echo "__isset none";
+    echo "none obj_now;";
 }
-*/
 
-public SolrDocument::__isset(string $obj->num) : bool
+echo "<br>";
 
+if (isset($str)) {
+    echo "yes str = ''";
+}
+else {
+    echo "none str = ''";
+}
+
+echo "<br>";
+
+var_dump(isset($obj));  //true
+echo "<br>";
+var_dump(isset($obj_now));  //false
+echo "<br>";
+var_dump(isset($obj, $obj_now));   //false, false 
+
+unset($str);
+
+var_dump(isset($obj_now, $str));
 
 ?>
