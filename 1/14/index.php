@@ -2,6 +2,7 @@
 
 require_once('cls.php');
 
+//работа с переменными
 if (isset($obj)) {
     echo "yes obj = 3";
 }
@@ -39,4 +40,22 @@ unset($str);
 
 var_dump(isset($obj_now, $str));
 
+echo "<br>";
+
+//работа с масивами
+//проверка значений
+var_dump(isset($a['test']));
+echo "<br>";
+var_dump(isset($a['hello']));
+echo "<br>";
+var_dump(isset($a['fool']));
+echo "<br>";
+
+//проверка ключей
+var_dump(array_key_exists('hello', $a));
+echo "<br>";
+
+//проверка вложенных элементов массива
+var_dump(isset($a['pie']['a']));
+echo "<br>";
 ?>
