@@ -58,4 +58,28 @@ echo "<br>";
 //проверка вложенных элементов массива
 var_dump(isset($a['pie']['a']));
 echo "<br>";
+var_dump(isset($a['pie']['b']));
+echo "<br>";
+var_dump(isset($a['pie']['a']['b']));
+echo "<br>";
+
+//строковые массивы
+echo $exp_arr;
+echo "<br>";
+var_dump(isset($exp_arr['some_key']));
+echo "<br>";
+var_dump(isset($exp_arr[0]));
+echo "<br>";
+var_dump(isset($exp_arr['0']));
+echo "<br>";
+var_dump(isset($exp_arr[0.5]));
+echo "<br>";
+var_dump(isset($exp_arr['0.5']));
+echo "<br>";
+var_dump(isset($exp_arr['0 Mostel']));
+echo "<br>";
+var_dump(isset($exp_arr[15]));
+echo "<br>";
+
+
 ?>
