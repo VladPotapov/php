@@ -3,6 +3,7 @@
 require_once('cls.php');
 
 //работа с переменными
+//место перегружаеммых данных
 if (isset($obj)) {
     echo "yes obj = 3";
 }
