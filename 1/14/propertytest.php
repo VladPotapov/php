@@ -24,6 +24,30 @@ class PropertyTest
         {
             return $this->data[$name];
         }
+
+        $trace = debug_backtrace();
+        trigger_error(
+            'Неопределенное свойство в __get(): '.$name.' в файле '.$trace[0]['file'].' на строке '.$trace[0]['line'], E_USER_NOTICE
+        );
+
+        return null;
+    }
+
+    public function __isset($name)
+    {
+        echo "Установлено ли '$name'?\n";
+        return isset($this->data[$name]);
+    }
+
+    public function __unset($name)
+    {
+        echo "Уничтожение '$name'\n";
+        unset($this->data[$name]);
+    }
+
+    public function getHidden()
+    {
+        return $this->hidden;
     }
 }
 

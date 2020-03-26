@@ -1,6 +1,7 @@
 <?php
 
 require_once('cls.php');
+require_once('propertytest.php');
 
 //работа с переменными
 //место перегружаеммых данных
@@ -81,6 +82,11 @@ var_dump(isset($exp_arr['0 Mostel']));
 echo "<br>";
 var_dump(isset($exp_arr[15]));
 echo "<br>";
+
+$pro = new PropertyTest();
+$pro->a = 1;
+
+echo $pro->a."\n";
 
 
 ?>
