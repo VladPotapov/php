@@ -85,8 +85,25 @@ echo "<br>";
 
 $pro = new PropertyTest();
 $pro->a = 1;
+echo "<br>";
+echo $pro->a."<br>";
 
-echo $pro->a."\n";
+var_dump(isset($pro->a));
+echo "<br>";
+unset($pro->a);
+var_dump(isset($pro->a));
+echo "<br>";
+
+echo $pro->declared."<br>";
+
+echo "Эксперемент с закрытым свойством hidden <br>";
+echo "Закрытые свойства видны внутри класса <br>";
+echo "Поэтому __get() не используется <br>";
+
+echo $pro->getHidden()."<br>";
+
+echo "Закрытые свойства не видны вне класса, поэтому используется __get()<br>";
+echo $pro->hidden."<br>";
 
 
 ?>
