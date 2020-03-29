@@ -3,20 +3,27 @@
 class Cls {
     private $arr = array();
 
-    private function __get($index) {
+    public function __get($index) {
         return $this->arr[$index];
     }
 
-    private function __set($index, $value) {
+    public function __set($index, $value) {
         $this->arr[$index] = $value;
     }
 
-    private function __isset($index) {
+    public function __isset($index) {
         return isset($this->arr[$index]);
     }
 
-    private function __unset($index) {
+    public function __unset($index) {
         unset($this->arr[$index]);
+    }
+
+    function destroy_foo() {
+        global $foo;
+        global $doo;
+        unset($foo);
+        unset($GLOBALS['doo']);
     }
 }
 
