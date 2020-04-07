@@ -21,8 +21,10 @@ class Cls {
 
     function destroy_foo() {
         global $foo;
-        global $doo;
         unset($foo);
+    }
+
+    function destroy_doo() {
         unset($GLOBALS['doo']);
     }
 }
