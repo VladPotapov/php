@@ -27,6 +27,21 @@ class Cls {
     function destroy_doo() {
         unset($GLOBALS['doo']);
     }
+
+    function destroy_bar($bar) {
+        unset($bar);
+        $bar = "somareBar";
+    }
+
+    function destroy_pls() {
+        static $pls;
+        $pls++;
+        echo "До удаления файла ". $pls;
+        unset($pls);
+
+        $pls = 23;
+        echo " после удаления ".$pls ."<br>";
+    }
 }
 
 ?>

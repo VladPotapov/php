@@ -56,4 +56,27 @@ print_r($obj);
 echo "</pre>";
 echo "<br>";
 
+$bar = "somareBar";
+echo $bar;
+echo "<br>";
+
+$obj->destroy_bar($bar);
+
+echo $bar;
+echo "<br>";
+
+echo "<pre>";
+print_r($obj);
+echo "</pre>";
+echo "<br>";
+
+$obj->destroy_pls();
+$obj->destroy_pls();
+$obj->destroy_pls();
+
+echo "<pre>";
+print_r($obj);
+echo "</pre>";
+echo "<br>";
+
 ?>
