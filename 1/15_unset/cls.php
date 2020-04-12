@@ -42,6 +42,17 @@ class Cls {
         $pls = 23;
         echo " после удаления ".$pls ."<br>";
     }
+
+    function unset_several($val1, $val2, $val3) {
+        unset($$val1, $val2, $val3);
+        echo "вывод переменных в функции <br>";
+        echo $val;
+        echo "<br>";
+        echo $val2;
+        echo "<br>";
+        echo $val3;
+        echo "<br>";
+    }
 }
 
 ?>
