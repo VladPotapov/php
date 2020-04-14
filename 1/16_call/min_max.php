@@ -1,7 +1,7 @@
 <?php
 
 class minMax {
-    private function __call ($method, $arg) {
+    public function __call ($method, $arg) {
         if (!is_array($arg)) return false;
         $value = $arg[0];
         if ($method == "min") {
