@@ -1,15 +1,12 @@
 <?php
 
-require_once("min_max.php");
+require_once("min_max2.php");
 
 $obj = new minMax();
 
-echo $obj->min(31, 19, 3, 65, 7, 20);
+echo $obj->min(31, 19, 3);
 echo "<br>";
-echo $obj->max(40, 9, 20, 18, 100, 50, 30);
+echo $obj->max(40, 9, 20);
 echo "<br>";
-echo $obj->min();
-echo "<br>";
-echo $obj->max();
 
 ?>
