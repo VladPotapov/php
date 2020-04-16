@@ -1,11 +1,11 @@
 <?php
 
-class minMax {
+class minMax_2 {
     public function min($val1, $val2, $val3) {
         echo "вызов открытого метода min";
     }
 
-    public function max($val1, $val2, $val3) {
+    private function max($val1, $val2, $val3) {
         echo "вызов закрытого метода max";
     }
 
