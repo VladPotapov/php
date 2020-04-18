@@ -9,7 +9,7 @@ class Employee {
     }
 
     public function __toString() {
-        return "{$this->surname} {$this->name[0]}. {$this->patronymic[0]}.";
+        return "{$this->surname} {$this->name} {$this->patronymic[0]}.";
     }
 
     public function __get($index) {
