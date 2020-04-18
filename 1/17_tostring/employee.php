@@ -9,7 +9,10 @@ class Employee {
     }
 
     public function __toString() {
-        return "{$this->surname} {$this->name} {$this->patronymic[0]}.";
+        /*при попытке выделить отдельный сисвол 
+        $this->name[0] вместо символа появляется знак вопроса
+        возникает при любой раскладке языка*/
+        return "{$this->surname} {$this->name} {$this->patronymic}";
     }
 
     public function __get($index) {
