@@ -21,7 +21,27 @@ echo "<br>";
 var_export($arr);
 echo "<br>";
 var_export($obj);
-echo "<br>"
+echo "<br>";
+echo "print_r <br>";
+print_r($var);
+echo "<br>";
+print_r($arr);
+echo "<br>";
+print_r($obj);
+echo "<br>";
+echo "var_dump <br>";
+var_dump($var);
+echo "<br>";
+var_dump($arr);
+echo "<br>";
+var_dump($obj);
 echo "</pre>";
+
+//создание копии масива
+//перевод массива в строку
+$str = var_export($arr, true);
+echo $arr;
+echo "<br>";
+echo $str;
 
 ?>
