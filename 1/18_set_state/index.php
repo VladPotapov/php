@@ -7,7 +7,6 @@ $var  = 100;
 $arr = array(1, 3, array(4, 5, 6), 7, 8);
 
 $obj = new  Cls(12, 174);
-$obj2 = new Cls2(20, 50);
 
 
 echo "var_export <br>";
@@ -46,8 +45,9 @@ echo "<br>";
 
 //работа с классом cls2
 //вызов метода __set_state()
-$str = var_export($obj2, true);
-$str = preg_replace("|,[\s]*\) |is", ")", $str);
-eval($str .';');
+$obj2 = new Cls2(20, 50);
+$str2 = var_export($obj2, true);
+$str2 = preg_replace("|,[\s]*\) |is", ")", $str2);
+eval($str2 .';');
 
 ?>
