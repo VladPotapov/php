@@ -6,7 +6,10 @@ class Cls2 {
         $this->priv_var = $val;
     }
 
-    public function __set_state($arr_obj) {
+    //метод __set_state() должен быть статическим 
+    //иначе будет выведено предупреждение
+    //Deprecated: Non-static method Cls2::__set_state() should not be called statically
+    public static function __set_state($arr_obj) {
         foreach($arr_obj as $key => $value) {
             echo "$key => $value <br>";
         }
