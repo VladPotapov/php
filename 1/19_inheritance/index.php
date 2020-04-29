@@ -25,8 +25,11 @@ $foo->printPHP();
 $bar->printItem('baz');
 $bar->printPHP();
 
-$sotrudnik = new Person();
-$name = new Tom();
+$sotrudnik = new Person(89027608942);
+// есле не указать телефон в дочернем классе 
+// php выведит ошибку
+// Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Person::__construct()
+$name = new Tom(24465);
 
 echo "<br>";
 
@@ -36,6 +39,11 @@ echo "<br>";
 var_export($name);
 echo "<br>";
 echo "</pre>";
+
+echo $sotrudnik->talk();
+echo "<br>";
+echo $name->talk();
+echo "<br>";
 
 
 
