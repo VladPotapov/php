@@ -40,11 +40,28 @@ var_export($name);
 echo "<br>";
 echo "</pre>";
 
+echo "<pre>";
+print_r($sotrudnik);
+echo "<br>";
+print_r($name);
+echo "<br>";
+echo "</pre>";
+
 echo $sotrudnik->talk();
 echo "<br>";
 echo $name->talk();
 echo "<br>";
 
+//Base2............................
+require_once("base2.php");
 
+$bs2 = new Base2("Какой-то текст");
+$dr2 = new Derived2(35);
+
+echo "<pre>";
+print_r($br2);
+echo "<br>";
+print_r($dr2);
+echo "</pre>";
 
 ?>
