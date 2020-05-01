@@ -1,1 +1,10 @@
-Notice:  Undefined variable: $x = переменной $x нету
+Notice:  
+Undefined variable: $x = переменной $x нету
+
+Fatal error:  
+Uncaught ArgumentCountError: 
+Too few arguments to function name = нет аргументов, либо их не хватает
+
+Uncaught Error: 
+Cannot access protected property Derived2::$var = не удается получить доступ к защищенному свойству $var
+(оно private || protected)
