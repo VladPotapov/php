@@ -1,0 +1,1 @@
+Notice:  Undefined variable: $x = переменной $x нету

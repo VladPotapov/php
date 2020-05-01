@@ -59,9 +59,13 @@ $bs2 = new Base2("Какой-то текст");
 $dr2 = new Derived2(35);
 
 echo "<pre>";
-print_r($br2);
+//при указании неверной переменной выведет сообщение
+// Notice:  Undefined variable: (неопределенная переменная)
+print_r($bs2);
 echo "<br>";
 print_r($dr2);
 echo "</pre>";
+echo "<br>";
+echo $dr2->var;
 
 ?>
