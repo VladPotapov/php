@@ -66,6 +66,11 @@ echo "<br>";
 print_r($dr2);
 echo "</pre>";
 echo "<br>";
-echo $dr2->var;
+//echo $dr2->var; Cannot access protected property Derived2::$var
+
+//Base3-------------------------------
+require_once("base3.php");
+//$bs3 = new Base3(); Call to protected Base3::__construct() from invalid context
+$dr3 = new Derved3(50);
 
 ?>
