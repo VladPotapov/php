@@ -71,6 +71,12 @@ echo "<br>";
 //Base3-------------------------------
 require_once("base3.php");
 //$bs3 = new Base3(); Call to protected Base3::__construct() from invalid context
-$dr3 = new Derved3(50);
+$dr3 = new Derived3(50);
+echo "<pre>";
+print_r($dr3);
+echo "<br>";
+echo "</pre>";
+
+echo "<h2>Много уровневое наследование</h2>";
 
 ?>
