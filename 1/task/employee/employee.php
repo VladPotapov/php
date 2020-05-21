@@ -31,9 +31,28 @@ class Employee {
         else return false;
     }
 
+    class Employee {
+        //фамилия
+        public $surname;
+        public $name;
+        public $patronymic;
+        public $photo
+        private $age;
+        //адресс
+        //улица
+        private $street
+        //дом
+        //корпус
+        //квартира
+    }
+
     /**
-     *  дата рождения
-     *  адрес, контакты
+     *  адрес
+     *      улица
+     *      дом
+     *      корпус
+     *      квартира
+     *  контакты
      *  офис, (координаты х, у)
      *  професия
      *      стаж

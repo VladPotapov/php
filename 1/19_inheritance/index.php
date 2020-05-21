@@ -79,4 +79,15 @@ echo "</pre>";
 
 echo "<h2>Много уровневое наследование</h2>";
 
+require_once("base4.php");
+$c = new C();
+$b = new B();
+
+echo $c->name." B = ".$b->get_age()." C = ".$c->get_age();
+/**
+ * Cannot access protected property (C::$age, B::$age)
+ * echo $c->age
+ * echo $b->age
+ */
+
 ?>
