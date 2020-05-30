@@ -90,4 +90,27 @@ echo $c->name." B = ".$b->get_age()." C = ".$c->get_age();
  * echo $b->age
  */
 
+ require_once("base5.php");
+
+ echo "<br>";
+ echo "<h2>base5.php</h2>";
+
+ $bs5 = new Base5();
+ echo "<br>";
+
+ $hr_b5 = new Heir_b5();
+ echo "<br>";
+ echo "Heir_b5:c = ".$hr_b5->c;
+ echo "<br>";
+ //сначала выполниться метод __get()
+ //потом только $hr_b5->d
+ echo "\nHeir_b5:d = ".$hr_b5->d;
+ echo "<br>";
+
+ $hr_c5 = new Heir_c5();
+ echo "<br>";
+
+ print_r($bs5);
+ print_r($hr_b5);
+ print_r($hr_c5);
 ?>
