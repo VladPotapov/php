@@ -1,9 +1,12 @@
 Notice:  
 Undefined variable: $x = переменной $x нету
+Accessing static property A::$b as non static in file = Доступ к статическому свойству A::$b как к нестатическому в файле
+Undefined property: A::$b in file = Неопределенное свойство: A::$b в файле
 
 Fatal error:  
     Uncaught ArgumentCountError: Ошибка Подсчета Неучтенных Аргументов
         Too few arguments to function name = нет аргументов, либо их не хватает
+        
 
     Uncaught Error: Неучтённая ошибка
         Cannot access protected property Derived2::$var = не удается получить доступ к защищенному свойству $var (оно private || protected)
