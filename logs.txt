@@ -12,3 +12,6 @@ Fatal error:
         Cannot access protected property Derived2::$var = не удается получить доступ к защищенному свойству $var (оно private || protected)
         Call to protected Base3::__construct() from invalid context in = Вызов защищенного __construct() из недопустимого контекста в файле
         Cannot access protected property C::$age =  не удается получить доступ к защищенному свойству C::$age
+
+        Call to undefined method B:: constructedMe() in fele = Вызов неопределенного метода B::function() in file
+        Решение: Возможно ошибка в название метода

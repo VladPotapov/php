@@ -7,23 +7,40 @@ class A {
     private $d = 'private';
 
     public function __construct() {
+        /*выведит при объявлении класса
+        set e = constructed*/
         $this->e = "constructed <br>";
     }
 
     public function __set($property, $value) {
-        //echo ' set '.$property.' = '.$value;
+        //подключает construct
+        //$property = e
+        //$value = constructed
+        echo ' set '.$property.' = '.$value;
+
+        //get (b, c, d)
         $this->$property = $value;
     }
 
     public function __get($property) {
         echo ' get '.$property.'<br>';
-        //$this->$property = "dynamic <br>";
+        //дабовляет dynamic к каждой переменной
+        $this->$property = 'dynamic <br>';
+        return $this->$property;
     }
 }
 
-class B extends A {}
+class B extends A {
+    public function constructMe() {
+        $this->e = 'constructed2 <br>';
+    }
+}
 
-class C extends B {}
+class C extends B {
+    public function __construct() {
+        parent::constructMe();
+    }
+}
 
 $obj_a = new A();
 echo $obj_a->a."<br>";
