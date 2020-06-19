@@ -17,4 +17,14 @@ class C extends B {
     //..
 }
 
+$c = new C();
+$b = new B();
+
+echo $c->name." B = ".$b->get_age()." C = ".$c->get_age();
+/**
+ * Cannot access protected property (C::$age, B::$age)
+ * echo $c->age
+ * echo $b->age
+ */
+
 ?>

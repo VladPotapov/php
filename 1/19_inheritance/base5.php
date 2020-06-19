@@ -58,5 +58,24 @@ print_r($hr_b5);
 echo "<br>";
 print_r($hr_c5);
 echo "<br>";
+echo "<br>";
 
+print_r(Base5::$d);
+echo "<br>";
+print_r(Heir_b5::$d);
+echo "<br>";
+print_r(Heir_c5::$d);
+echo "<br>";
+echo "<br>";
+
+echo  'Base5 class';
+echo "<br>";
+$R = new reflectionclass('Base5');
+//отображает массив переменных
+//указывая их статус (public, private и т.д.)
+print_r($R->getdefaultproperties());
+echo "<br>";
+//показывает массив статических переменных
+print_r($R->getstaticproperties());
+echo "<br>";
 ?>
