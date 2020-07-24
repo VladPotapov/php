@@ -1,20 +1,20 @@
 <?php
 
-class Transport {
+abstract class Transport {
     //вид транспорта
     //воздушный, наземный, водный
-    public $mode_of_transport;
+    abstract function mode_of_transport();
 
     //автомобиль, грузовик и т.д.
-    public $category;
-    public $name;
-    public $speed;
+    abstract function category();
+    abstract function name();
+    abstract function speed();
 
     //вид двигателя
-    public $engine_type;
+    abstract function engine_type();
     
     //объём двигателя
-    public $engine_volume;
+    abstract function engine_volume();
 }
 
 ?>
