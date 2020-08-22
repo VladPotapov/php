@@ -22,4 +22,7 @@ $obj->method();
 if(defined("Cls::NAME")) echo " константа определена <br>";
 else echo " константа не определена <br>";
 
+if(defined("Cls::POSITION")) echo "yes position <br>";
+else echo "none position <br>";
+
 ?>
