@@ -27,3 +27,6 @@ Fatal error:
 
 Warning:    Предупреждение
     The magic method __callStatic() must have public visibility and be static in file =волшебный метод __callStatic() должен иметь публичную видимость и быть статичным в файле
+
+Deprecated: 
+    Non-static method Cls::get_point() should not be called statically in file  =  Нестатический метод Cls:: get_point() не должен вызываться статически
