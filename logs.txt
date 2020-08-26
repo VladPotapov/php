@@ -1,32 +1,55 @@
 Notice:  
 Undefined variable: $x = переменной $x нету
-Accessing static property A::$b as non static in file = Доступ к статическому свойству A::$b как к нестатическому в файле
-Undefined property: A::$b in file = Неопределенное свойство: A::$b в файле
+Accessing static property A::$b as non static in file = 
+Доступ к статическому свойству A::$b как к нестатическому в файле
+
+Undefined property: A::$b in file = 
+Неопределенное свойство: A::$b в файле
 
 Fatal error:  
     Uncaught ArgumentCountError: Ошибка Подсчета Неучтенных Аргументов
-        Too few arguments to function name = нет аргументов, либо их не хватает
+        Too few arguments to function name = 
+        нет аргументов, либо их не хватает
+
+    Uncaught Error:
+        Class 'myClass' not found =
+        Класс "myClass" не найден
 
     Could not check compatibility between d::baz(Foo $foo) and b::baz(Baz $baz), because class Baz is not available in file =
     Не могли бы проверить совместимость между d::baz(Foo $foo), и b::baz(Baz $baz), баз, потому что класс не доступен в
 
     Cannot inherit previously-inherited or override constant b from interface a in file =
     нельзя переопределить константы B от интерфейса в файле
+
+    Cannot override final method base::__constructor() =
+    Нельзя оставлять окончательный выбор метода:__конструктор()
+
+    Class myClass may not inherit from final class (finalClass) =
+    Класс myClass не может наследоваться от final class (finalClass)
         
 
     Uncaught Error: Неучтённая ошибка
-        Cannot access protected property Derived2::$var = не удается получить доступ к защищенному свойству $var (оно private || protected)
-        Call to protected Base3::__construct() from invalid context in = Вызов защищенного __construct() из недопустимого контекста в файле
-        Cannot access protected property C::$age =  не удается получить доступ к защищенному свойству C::$age
+        Cannot access protected property Derived2::$var = 
+        не удается получить доступ к защищенному свойству $var (оно private || protected)
 
-        Call to undefined method B:: constructedMe() in fele = Вызов неопределенного метода B::function() in file
+        Call to protected Base3::__construct() from invalid context in = 
+        Вызов защищенного __construct() из недопустимого контекста в файле
+
+        Cannot access protected property C::$age =  
+        не удается получить доступ к защищенному свойству C::$age
+
+        Call to undefined method B:: constructedMe() in fele = 
+        Вызов неопределенного метода B::function() in file
         Решение: Возможно ошибка в название метода
 
-        Class 'ConcreteClass' not found in file = Класс 'ConcreteClass' в файле не найден
+        Class 'ConcreteClass' not found in file = 
+        Класс 'ConcreteClass' в файле не найден
     
 
 Warning:    Предупреждение
-    The magic method __callStatic() must have public visibility and be static in file =волшебный метод __callStatic() должен иметь публичную видимость и быть статичным в файле
+    The magic method __callStatic() must have public visibility and be static in file =
+    волшебный метод __callStatic() должен иметь публичную видимость и быть статичным в файле
 
 Deprecated: 
-    Non-static method Cls::get_point() should not be called statically in file  =  Нестатический метод Cls:: get_point() не должен вызываться статически
+    Non-static method Cls::get_point() should not be called statically in file  = 
+    Нестатический метод Cls:: get_point() не должен вызываться статически
