@@ -11,9 +11,18 @@ Fatal error:
         Too few arguments to function name = 
         нет аргументов, либо их не хватает
 
+        Too few arguments to function Connection::__construct(), 0 passed in file =
+        Слишком мало аргументов для функции Connection::__construct (), 0 передано в файле
+
+         Uncaught PDOException: Неперехваченное PDOException
+
     Uncaught Error:
         Class 'myClass' not found =
         Класс "myClass" не найден
+
+        Call to undefined function unclude() =
+        Вызов неопределенной функции include()
+
 
     Could not check compatibility between d::baz(Foo $foo) and b::baz(Baz $baz), because class Baz is not available in file =
     Не могли бы проверить совместимость между d::baz(Foo $foo), и b::baz(Baz $baz), баз, потому что класс не доступен в
@@ -49,6 +58,9 @@ Fatal error:
 Warning:    Предупреждение
     The magic method __callStatic() must have public visibility and be static in file =
     волшебный метод __callStatic() должен иметь публичную видимость и быть статичным в файле
+
+    file_get_contents(text): failed to open stream: No such file or directory in file =
+    file_get_contents(text): не удалось открыть поток: нет такого файла или каталога в файле
 
 Deprecated: 
     Non-static method Cls::get_point() should not be called statically in file  = 
